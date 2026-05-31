@@ -1026,5 +1026,16 @@ def main():
                     if hasattr(e, 'args') and e.args:
                         st.error(f"Error message: {e.args[0]}")
 
+    # Global footer displayed at the bottom of every page
+    st.markdown("---")
+    st.html("""
+    <div style="text-align: center; padding: 10px; opacity: 0.85;">
+        <p style="color: #64748b; font-size: 0.95rem; font-weight: 600; margin: 0; font-family: 'Outfit', sans-serif;">
+            Built with ❤️ by Akhil
+        </p>
+    </div>
+    """)
+
 if __name__ == "__main__":
     main()
+
