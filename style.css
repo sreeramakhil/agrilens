@@ -1,0 +1,367 @@
+/* AgriLens Minimalist Premium CSS Design System (Sleek SaaS Aesthetics) */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+/* Apply Clean Premium Typography globally */
+html, body, [class*="css"], .stMarkdown, p, h1, h2, h3, h4, h5, h6, label {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+/* Page Background: Clean, minimal slate-light gray with very subtle warmth */
+.stApp {
+    background-color: #f8fafc !important;
+    background-image: radial-gradient(at 0% 0%, rgba(220, 252, 231, 0.3) 0, transparent 50%), 
+                      radial-gradient(at 50% 0%, rgba(219, 234, 254, 0.2) 0, transparent 50%) !important;
+}
+
+/* Globally force legible, high-contrast dark text */
+.stApp p, 
+.stApp li, 
+.stApp label,
+.stApp span:not(.stTooltipIcon) {
+    color: #334155 !important; /* Sleek charcoal gray */
+    font-size: 0.975rem !important;
+    line-height: 1.6 !important;
+}
+
+/* Sidebar Custom Modern Panel */
+[data-testid="stSidebar"] {
+    background-color: #ffffff !important;
+    border-right: 1px solid #e2e8f0 !important;
+    box-shadow: none !important;
+}
+
+[data-testid="stSidebar"] .stRadio > label {
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+    color: #0f172a !important; /* Bold Slate-900 */
+    margin-bottom: 16px !important;
+    padding-left: 8px !important;
+}
+
+/* Sidebar Navigation Radio Options - Clean Menu List */
+[data-testid="stSidebar"] [role="radiogroup"] {
+    gap: 6px !important;
+    padding: 0 8px !important;
+}
+
+[data-testid="stSidebar"] [role="radiogroup"] label {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 8px 12px !important;
+    transition: all 0.2s ease !important;
+    cursor: pointer !important;
+    margin-bottom: 2px !important;
+}
+
+/* Sidebar radio option text */
+[data-testid="stSidebar"] [role="radiogroup"] label p,
+[data-testid="stSidebar"] [role="radiogroup"] label div,
+[data-testid="stSidebar"] [role="radiogroup"] label span,
+[data-testid="stSidebar"] [role="radiogroup"] label {
+    color: #475569 !important; /* Muted Slate-600 */
+    font-weight: 500 !important;
+    font-size: 0.95rem !important;
+}
+
+/* Navigation items hover effect */
+[data-testid="stSidebar"] [role="radiogroup"] label:hover {
+    background: #f1f5f9 !important;
+    color: #0f172a !important;
+}
+
+[data-testid="stSidebar"] [role="radiogroup"] label:hover p {
+    color: #0f172a !important;
+}
+
+/* Main Content Headers */
+h1 {
+    color: #0f172a !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.03em !important;
+    margin-bottom: 8px !important;
+}
+
+h2, h3 {
+    color: #0f172a !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em !important;
+}
+
+h4, h5, h6 {
+    color: #1e293b !important;
+    font-weight: 600 !important;
+}
+
+/* Modern Left-Border Accent Hero Section (Smart Crop Assistant) */
+div[style*="background-color: #f0f8f0"] {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-left: 5px solid #10b981 !important; /* Emerald green left accent */
+    border-radius: 12px !important;
+    padding: 24px !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05) !important;
+    margin-bottom: 24px !important;
+    text-align: left !important; /* Clean left aligned text */
+}
+
+div[style*="background-color: #f0f8f0"] h3 {
+    color: #0f172a !important;
+    font-weight: 700 !important;
+    margin: 0 0 6px 0 !important;
+}
+
+div[style*="background-color: #f0f8f0"] p {
+    color: #475569 !important;
+    font-weight: 400 !important;
+    margin: 0 !important;
+}
+
+/* Home Page Card Grid - Clean, Professional SaaS Design */
+div[style*="background-color: #e6f3ff"], 
+div[style*="background-color: #fff2e6"], 
+div[style*="background-color: #e6ffe6"], 
+div[style*="background-color: #f0e6ff"],
+div[style*="background-color: #f8f9fa"] {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    padding: 20px !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.02) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    margin-bottom: 16px !important;
+    height: 220px !important; /* Balanced height */
+}
+
+/* Top Color Accents for clean differentiation */
+div[style*="background-color: #e6f3ff"] { border-top: 4px solid #3b82f6 !important; } /* Blue (Health) */
+div[style*="background-color: #fff2e6"] { border-top: 4px solid #f59e0b !important; } /* Amber (Recommendations) */
+div[style*="background-color: #e6ffe6"] { border-top: 4px solid #10b981 !important; } /* Emerald (Weather) */
+div[style*="background-color: #f0e6ff"] { border-top: 4px solid #8b5cf6 !important; } /* Purple (Dashboard) */
+
+/* Modern Card Hover Elevation with subtle drop shadow */
+div[style*="background-color: #e6f3ff"]:hover { transform: translateY(-4px) !important; box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1) !important; }
+div[style*="background-color: #fff2e6"]:hover { transform: translateY(-4px) !important; box-shadow: 0 10px 25px -5px rgba(245, 158, 11, 0.1) !important; }
+div[style*="background-color: #e6ffe6"]:hover { transform: translateY(-4px) !important; box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.1) !important; }
+div[style*="background-color: #f0e6ff"]:hover { transform: translateY(-4px) !important; box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.1) !important; }
+
+/* Uniform Clean Card Header Colors */
+div[style*="background-color: #e6f3ff"] h4 { color: #1e3a8a !important; font-weight: 700 !important; margin-bottom: 10px !important; }
+div[style*="background-color: #fff2e6"] h4 { color: #78350f !important; font-weight: 700 !important; margin-bottom: 10px !important; }
+div[style*="background-color: #e6ffe6"] h4 { color: #064e3b !important; font-weight: 700 !important; margin-bottom: 10px !important; }
+div[style*="background-color: #f0e6ff"] h4 { color: #4c1d95 !important; font-weight: 700 !important; margin-bottom: 10px !important; }
+
+/* Uniform Muted Body Texts inside Cards */
+div[style*="background-color:"] p {
+    color: #64748b !important; /* Muted slate-500 */
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+}
+
+/* Minimal "How It Works" Steps styling */
+div[style*="text-align: center; padding: 15px"] {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 10px !important;
+}
+
+div[style*="text-align: center; padding: 15px"] h4 {
+    color: #0f172a !important;
+    font-size: 1.05rem !important;
+    font-weight: 600 !important;
+    margin: 10px 0 6px 0 !important;
+}
+
+div[style*="text-align: center; padding: 15px"] p {
+    color: #64748b !important;
+    font-size: 0.875rem !important;
+}
+
+/* Sleek Dashboard Weather Cards */
+div[style*="background: linear-gradient"] {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02) !important;
+    padding: 20px !important;
+    transition: transform 0.2s ease !important;
+}
+
+div[style*="background: linear-gradient"]:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05) !important;
+}
+
+/* Weather Dash Metric Cards styling */
+div[style*="background: linear-gradient"] h3 { color: #0f172a !important; font-weight: 800 !important; }
+div[style*="background: linear-gradient"] p { color: #475569 !important; font-weight: 500 !important; }
+div[style*="background: linear-gradient"] small { color: #94a3b8 !important; }
+
+/* Clean Minimalist Buttons (SaaS look) */
+.stButton > button {
+    background: #0f172a !important; /* Dark Slate-900 for modern elegant look */
+    color: #ffffff !important;
+    border: 1px solid #0f172a !important;
+    border-radius: 8px !important;
+    padding: 10px 20px !important;
+    font-size: 0.95rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.2px !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+    transition: all 0.2s ease !important;
+}
+
+.stButton > button:hover {
+    background: #1e293b !important; /* Slate-800 */
+    border-color: #1e293b !important;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15) !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Primary Accent Action Buttons (Clean Emerald Green) */
+.stButton > button[type="primary"] {
+    background: #10b981 !important; /* Modern Emerald */
+    border-color: #10b981 !important;
+}
+
+.stButton > button[type="primary"]:hover {
+    background: #059669 !important; /* Darker Emerald */
+    border-color: #059669 !important;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2) !important;
+}
+
+.stButton > button, 
+.stButton > button p, 
+.stButton > button span, 
+.stButton > button div {
+    color: white !important;
+}
+
+/* Selection & Input Improvements */
+.stTextInput input, 
+.stSelectbox [data-baseweb="select"] {
+    border-radius: 8px !important;
+    border: 1px solid #cbd5e1 !important;
+    padding: 8px 12px !important;
+    background-color: #ffffff !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.02) !important;
+    transition: all 0.2s ease !important;
+}
+
+.stTextInput input:focus, 
+.stSelectbox [data-baseweb="select"]:focus-within {
+    border-color: #10b981 !important;
+    box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.15) !important;
+}
+
+/* Forced Input Text Readability */
+.stTextInput input, 
+.stSelectbox div, 
+.stSelectbox p,
+.stSelectbox span,
+[data-baseweb="select"] div,
+[data-baseweb="popover"] div,
+[data-baseweb="popover"] li {
+    color: #334155 !important;
+    font-weight: 500 !important;
+}
+
+/* Minimal File Uploader */
+[data-testid="stFileUploader"] {
+    background: #ffffff !important;
+    border: 1.5px dashed #cbd5e1 !important;
+    border-radius: 12px !important;
+    padding: 16px !important;
+    transition: all 0.2s ease !important;
+}
+
+[data-testid="stFileUploader"]:hover {
+    border-color: #10b981 !important;
+    background: #f0fdf4 !important;
+}
+
+/* Custom Sliders */
+.stSlider [role="slider"] {
+    background-color: #10b981 !important;
+    border: 2px solid #ffffff !important;
+}
+
+.stSlider label, .stSlider span {
+    color: #475569 !important;
+    font-weight: 500 !important;
+}
+
+/* Sleek Alert Cards */
+.stAlert {
+    border-radius: 10px !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02) !important;
+}
+
+/* Progress bar */
+.stProgress > div > div > div > div {
+    background-color: #10b981 !important;
+}
+
+/* Force clean, simple, light design for all expanders (both summary and details) */
+div[data-testid="stExpander"], 
+.streamlit-expanderHeader, 
+details[data-testid="stExpander"] {
+    background-color: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 10px !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02) !important;
+}
+
+div[data-testid="stExpander"] summary, 
+.streamlit-expanderHeader,
+details[data-testid="stExpander"] summary {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    padding: 12px 16px !important;
+    border-radius: 10px !important;
+    transition: background-color 0.2s ease !important;
+}
+
+div[data-testid="stExpander"] summary:hover, 
+details[data-testid="stExpander"] summary:hover {
+    background-color: #f8fafc !important;
+}
+
+/* Style active/expanded content box */
+div[data-testid="stExpanderDetails"], 
+details[data-testid="stExpander"] > div {
+    background-color: #ffffff !important;
+    padding: 16px !important;
+    border-top: 1px solid #f1f5f9 !important;
+    border-radius: 0 0 10px 10px !important;
+}
+
+div[data-testid="stExpanderDetails"] p,
+div[data-testid="stExpanderDetails"] li,
+div[data-testid="stExpanderDetails"] span,
+details[data-testid="stExpander"] p,
+details[data-testid="stExpander"] li,
+details[data-testid="stExpander"] span {
+    color: #475569 !important; /* Elegant slate gray */
+    font-size: 0.925rem !important;
+}
+
+
+/* Clean Page Load Transition */
+.stApp {
+    animation: smoothFade 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes smoothFade {
+    from {
+        opacity: 0;
+        transform: translateY(4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

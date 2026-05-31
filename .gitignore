@@ -1,0 +1,11 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.gemini/
+scratch/
+C:/
+*.pdf
+.system_generated/
+.devcontainer/
+vc_redist_list.txt
